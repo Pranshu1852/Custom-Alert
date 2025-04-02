@@ -88,3 +88,6 @@ function customAlert(type,position='top-right',message){
         alertElement.style.display='none';
     },3000)
 }
+
+
+export default customAlert;
