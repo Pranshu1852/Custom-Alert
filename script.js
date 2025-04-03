@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function customAlert(type, position = 'top-right', message) {
     const alertElement = document.createElement('div');
     document.body.appendChild(alertElement);
@@ -84,4 +82,4 @@ function customAlert(type, position = 'top-right', message) {
         alertElement.remove();
     }, 3000);
 }
-exports.default = customAlert;
+export default customAlert;
