@@ -85,7 +85,7 @@ function customAlert(type,position='top-right',message){
   
 
     setTimeout(()=>{
-        alertElement.style.display='none';
+        alertElement.remove();
     },3000)
 }
 
