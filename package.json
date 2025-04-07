@@ -3,6 +3,7 @@
   "version": "1.0.8",
   "description": "Custom alert package helps to integrate custom alert in your website easily.",
   "main": "script.js",
+  "types": "script.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
