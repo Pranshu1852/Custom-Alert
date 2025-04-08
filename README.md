@@ -1,6 +1,6 @@
 # Custom-Alert
 
-### Hello Everyone i created this Custom Alert package that can easily integrate with your website.
+Hello Everyone i created this Custom Alert package that can easily integrate with your website.
 
 ## How to Use:
 
