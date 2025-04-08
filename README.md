@@ -10,7 +10,7 @@ First install using this command: ```npm i @pranshupatel/custom-alert```
 ### Step2:-
 Import the function by adding below line in the top of your script file.
 ```js
-import customAlert from './node_modules/@pranshupatel/custom-alert/script.js';
+import {customAlert, Position, Alerttype} from './node_modules/@pranshupatel/custom-alert/script.js';
 ```
 
 Also add ```type='module'``` in your script declaration in HTML.
@@ -25,6 +25,20 @@ Here,
 - second argument is position of the message (top-left,top-center,top-right,bottom-left,bottom-center,bottom-right);
 - third argument is the message you want to show.
 
+Ex:- Showing success message at top-right position
 ```js
-customAlert('success','top-right','hello');
+customAlert({
+    type:Alerttype.Success,
+    position: Position.Top_Right,
+    message: "Success message"
+});
+```
+
+Ex:- Showing error message at top-right position
+```js
+customAlert({
+    type:Alerttype.Error,
+    position: Position.Top_Right,
+    message: "Error message"
+});
 ```
