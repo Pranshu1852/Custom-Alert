@@ -1,6 +1,6 @@
 {
   "name": "@pranshupatel/custom-alert",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Custom alert package helps to integrate custom alert in your website easily.",
   "main": "script.js",
   "types": "script.d.ts",

@@ -14,6 +14,7 @@ interface alertObj {
     type: Alerttype;
     position?: Position;
     message: string;
+    timer?: number;
 }
 declare function customAlert(obj: alertObj): void;
 export { customAlert, Position, Alerttype };

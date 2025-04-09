@@ -94,6 +94,6 @@ function customAlert(obj) {
     }
     setTimeout(() => {
         alertElement.remove();
-    }, 3000);
+    }, obj.timer || 3000);
 }
 export { customAlert, Position, Alerttype };

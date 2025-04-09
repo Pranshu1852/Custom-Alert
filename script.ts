@@ -15,7 +15,8 @@ enum Alerttype{
 interface alertObj{
     type: Alerttype,
     position?: Position,
-    message: string
+    message: string,
+    timer?: number
 }
 
 function customAlert(obj :alertObj){
@@ -108,7 +109,7 @@ function customAlert(obj :alertObj){
 
     setTimeout(()=>{
         alertElement.remove();
-    },3000)
+    },obj.timer||3000);
 }
 
 

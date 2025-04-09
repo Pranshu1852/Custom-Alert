@@ -21,9 +21,10 @@ Also add ```type='module'``` in your script declaration in HTML.
 Call the customAlert function in your script.
 
 Here,
-- first argument is type of the message (success,error).
-- second argument is position of the message (top-left,top-center,top-right,bottom-left,bottom-center,bottom-right);
-- third argument is the message you want to show.
+- first property in object is type of the message (success,error).
+- second property in object is position of the message (top-left,top-center,top-right,bottom-left,bottom-center,bottom-right);
+- third property in object is the message you want to show.
+- fourth property in object is the timer which is optional by default it is of 3000ms(3 seconds).
 
 Ex:- Showing success message at top-right position
 ```js
@@ -41,4 +42,14 @@ customAlert({
     position: Position.Top_Right,
     message: "Error message"
 });
+```
+
+Ex:- Showing success message at top-right position till time( in ms ) provided 
+```js
+customAlert({
+    type: Alerttype.Success,
+    position: Position.Top_Right,
+    message: "Success message",
+    timer: 5000
+})
 ```
